@@ -41,6 +41,7 @@ export const Todo = () => {
   const updateTaskHandler = () => {
     dispatch(updateTaskList({task: task, id: item?.id}));
     setIsEditing(false);
+    setTask('');
   };
 
   const DeleteHandler = item => {
